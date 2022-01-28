@@ -1,0 +1,14 @@
+
+<div class="nav-side-bar">
+    <ul [ngClass]="{'nav-small':mode===false, 'nav-big':mode===true}" >
+        <li   *ngFor="let item of mainMenu" (click)="changeMenu(item.router)" >
+      
+                <span class="icon" >
+                    <i [ngClass]="item.icon"></i>
+                </span>
+                <span class="title">{{item.name}}</span>
+   
+           
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,25 @@
+
+
+
+<div *ngIf="menu==1">
+    <app-home-page></app-home-page>
+</div>
+<div *ngIf="menu==2">
+    <app-sells-page></app-sells-page>
+</div>
+<div *ngIf="menu==3">
+    <app-inventory-page></app-inventory-page>
+</div>
+<div *ngIf="menu==4">
+    <app-purchases-page></app-purchases-page>
+</div>
+<div *ngIf="menu==5">
+    <app-balance-page></app-balance-page>
+</div>
+
+
+
+
+<app-side-bar (menu)=menuchange($event)></app-side-bar>
+
+
