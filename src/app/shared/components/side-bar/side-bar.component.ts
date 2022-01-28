@@ -20,7 +20,7 @@ export class SideBarComponent implements OnInit {
   ngOnInit(): void {
     this.mainMenu = [
       {
-        name: 'Invetory&Control',
+        name: 'Inventory&Control',
         icon: 'fab fa-critical-role',
         router: ['']
       },
